@@ -29,65 +29,73 @@ Financial Price Prediction Crypto - stocks - funds - Forex
 This repository provides implementations and explanations for key technical indicators used in trading:  
 **RSI (Relative Strength Index), EMA50 (Exponential Moving Average 50), EMA200, ATR (Average True Range), and nATR (Normalized ATR).**  
 
-## 📌 Indicators  
+## 🛠️ Technical Indicators  
 
 ### 1️⃣ Relative Strength Index (RSI)  
+The **RSI (Relative Strength Index)** measures the magnitude of recent price changes to evaluate overbought or oversold conditions.  
+
 **Formula:**  
-\$
+$$
 RSI = 100 - \left( \frac{100}{1 + RS} \right)
-$
+$$
 where:  
-$
+$$
 RS = \frac{\text{Average Gain over } n \text{ periods}}{\text{Average Loss over } n \text{ periods}}
-$
+$$
+- **Overbought**: RSI > 70  
+- **Oversold**: RSI < 30  
 - Default period: **14**  
-- RSI values range between **0 and 100**  
-- **Overbought:** RSI > 70  
-- **Oversold:** RSI < 30  
 
 ---
 
 ### 2️⃣ Exponential Moving Average (EMA)  
-EMA smooths price data with a higher weight on recent prices.  
+The **Exponential Moving Average (EMA)** gives more weight to recent prices, making it more responsive than a Simple Moving Average (SMA).  
 
 **Formula:**  
-\[
+$$
 EMA_t = \alpha \cdot P_t + (1 - \alpha) \cdot EMA_{t-1}
-\]
+$$
 where:  
-\[
+$$
 \alpha = \frac{2}{n+1}
-\]
+$$
 - **EMA50**: \( n = 50 \)  
 - **EMA200**: \( n = 200 \)  
 
 ---
 
 ### 3️⃣ Average True Range (ATR)  
-ATR measures market volatility.  
+The **Average True Range (ATR)** is a volatility indicator that measures market fluctuations.  
 
 **Formula:**  
-\[
+$$
 ATR_n = \frac{1}{n} \sum_{i=1}^{n} TR_i
-\]
+$$
 where **True Range (TR)** is:  
-\[
+$$
 TR = \max( H_t - L_t, |H_t - C_{t-1}|, |L_t - C_{t-1}| )
-\]
+$$
 - Default period: **14**  
+- Higher ATR → **Higher volatility**  
+- Lower ATR → **Lower volatility**  
 
 ---
 
 ### 4️⃣ Normalized ATR (nATR)  
-nATR standardizes ATR against price to assess relative volatility.  
+The **Normalized ATR (nATR)** standardizes ATR against price, making it more comparable across different assets.  
 
 **Formula:**  
-\[
+$$
 nATR = \frac{ATR}{P} \times 100
-\]
+$$
 where:  
 - \( ATR \) = Average True Range  
 - \( P \) = Current Price  
+
+For example, if ATR = $5$ and price = <span>$</span>100, then:  
+$$
+nATR = \frac{5}{100} \times 100 = 5\%
+$$  
 
 ---
 
