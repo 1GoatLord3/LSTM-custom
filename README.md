@@ -1,7 +1,13 @@
-# LSTM-custom
-Financial Price Prediction Crypto - stocks - funds - Forex
+# 📈 LSTM-Custom  
+### Financial Price Prediction for Crypto, Stocks, Funds, and Forex  
 
-   [Input] → [LSTM Layer] → [Dense Layer] → [Output]
+This repository implements **LSTM-based financial market prediction models** combined with essential **technical indicators** to enhance trading strategies.  
+
+## 🧠 LSTM Neural Network  
+
+LSTM (Long Short-Term Memory) is a type of **Recurrent Neural Network (RNN)** designed to remember long-term dependencies in time series data, making it ideal for **financial forecasting**.  
+
+### 🔹 Basic LSTM Structure  
 
   ┌───────────────────┐
   │  Forget Gate (f)  │  🔥 Forget irrelevant past info
@@ -24,9 +30,26 @@ Financial Price Prediction Crypto - stocks - funds - Forex
   Supports LSTM, CNN, and transformers
   Easier to prototype than raw TensorFlow
 
-# Technical Indicators Documentation
 
-This repository provides implementations and explanations for key technical indicators used in trading:  
+---
+
+## 🏗️ ML Frameworks: Scikit-Learn vs. Keras  
+
+### 🛠 **Scikit-Learn**  
+✅ Best for **classic machine learning** (Random Forest, SVM, Decision Trees)  
+✅ Powerful **preprocessing & feature selection** tools  
+✅ **Simple and efficient**, but not ideal for deep learning  
+
+### 🔥 **Keras (with TensorFlow backend)**  
+✅ **High-level API** for deep learning models  
+✅ Supports **LSTM, CNN, and transformers**  
+✅ **Easy to prototype** compared to raw TensorFlow  
+
+---
+
+# 📊 Technical Indicators Documentation  
+
+This repository provides implementations and explanations for key **technical indicators** used in financial trading:  
 **RSI (Relative Strength Index), EMA50 (Exponential Moving Average 50), EMA200, ATR (Average True Range), and nATR (Normalized ATR).**  
 
 ## 🛠️ Technical Indicators  
@@ -99,8 +122,10 @@ $$
 
 ---
 
-## 📌 Usage  
-- **RSI**: Identify overbought/oversold conditions  
-- **EMA50 & EMA200**: Trend-following indicators (Golden Cross & Death Cross)  
-- **ATR**: Measures absolute volatility  
-- **nATR**: Compares volatility relative to price  
+## 📌 How to Use These Indicators  
+
+🔹 **RSI**: Identify overbought/oversold conditions for possible reversals  
+🔹 **EMA50 & EMA200**: Trend-following indicators (Golden Cross & Death Cross)  
+🔹 **ATR**: Measures absolute volatility to set stop-loss levels  
+🔹 **nATR**: Compares volatility relative to price for better risk assessment  
+
