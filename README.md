@@ -1,6 +1,29 @@
 # LSTM-custom
 Financial Price Prediction Crypto - stocks - funds - Forex
 
+   [Input] → [LSTM Layer] → [Dense Layer] → [Output]
+
+  ┌───────────────────┐
+  │  Forget Gate (f)  │  🔥 Forget irrelevant past info
+  ├───────────────────┤
+  │   Input Gate (i)  │  📥 Learn new relevant data
+  ├───────────────────┤
+  │ Output Gate (o)   │  🎯 Decide what to output
+  ├───────────────────┤
+  │ Cell State (c)    │  🧠 Long-term memory
+  └───────────────────┘
+
+#🏗️ ML Frameworks: Scikit-Learn vs. Keras
+  🛠 Scikit-Learn
+  Great for classic machine learning (Random Forest, SVM, etc.)
+  Preprocessing & feature selection tools
+  Simple, efficient, but not ideal for deep learning
+
+  🔥 Keras (with TensorFlow backend)
+  High-level API for deep learning models
+  Supports LSTM, CNN, and transformers
+  Easier to prototype than raw TensorFlow
+
 # Technical Indicators Documentation
 
 This repository provides implementations and explanations for key technical indicators used in trading:  
@@ -73,7 +96,3 @@ where:
 - **EMA50 & EMA200**: Trend-following indicators (Golden Cross & Death Cross)  
 - **ATR**: Measures absolute volatility  
 - **nATR**: Compares volatility relative to price  
-
-## 📌 Installation  
-```bash
-git clone https://github.com/yourusername/your-repo.git
