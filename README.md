@@ -10,13 +10,13 @@ This repository provides implementations and explanations for key technical indi
 
 ### 1️⃣ Relative Strength Index (RSI)  
 **Formula:**  
-\[
+$
 RSI = 100 - \left( \frac{100}{1 + RS} \right)
-\]
+$
 where:  
-\[
+$
 RS = \frac{\text{Average Gain over } n \text{ periods}}{\text{Average Loss over } n \text{ periods}}
-\]
+$
 - Default period: **14**  
 - RSI values range between **0 and 100**  
 - **Overbought:** RSI > 70  
