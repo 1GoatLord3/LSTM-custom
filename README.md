@@ -1,3 +1,6 @@
+
+![logo](https://github.com/user-attachments/assets/2de19ff0-9c2b-453f-85e5-00a8c57b1252)
+
 # 📈 LSTM-Custom  
 ### Financial Price Prediction for Crypto, Stocks, Funds, and Forex  
 
